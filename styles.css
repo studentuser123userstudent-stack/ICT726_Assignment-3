@@ -1,0 +1,327 @@
+/* GlowCraft Skincare - Full styles.css */
+
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #fffef9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #ffe3e3, #f9c5d1);
+  padding: 20px 20px 40px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 80px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #8a2be2;
+  margin-top: 10px;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+  color: #8a2be2;
+}
+
+/* Hero Section with Video */
+.hero-section {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.intro-text {
+  background-color: rgba(255, 255, 255, 0.88);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.intro-text h2 {
+  font-size: 2rem;
+  color: #8a2be2;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #8a2be2;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #6a1cb2;
+}
+
+/* Product Showcase */
+.product-showcase {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product-showcase h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #8a2be2;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  color: #6a1cb2;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product-card .price {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* FAQ Section */
+.faq-content {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq-content h3 {
+  margin-top: 25px;
+  color: #8a2be2;
+}
+
+.faq-content p {
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+}
+
+/* Contact Form */
+.contact-form-section {
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f3eefc;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: bold;
+  color: #333;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  align-self: flex-start;
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #6a1cb2;
+}
+
+#formFeedback {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Story Section */
+.story-section {
+  padding: 60px 20px;
+  background-color: #fff5f8;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.timeline-item {
+  background: #ffffff;
+  border-left: 5px solid #8a2be2;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+}
+
+.timeline-item h3 {
+  color: #8a2be2;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.timeline-item p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-section {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .logo {
+    position: static;
+    display: block;
+    margin: auto;
+  }
+
+  .intro-text {
+    padding: 20px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding: 0;
+  }
+}
